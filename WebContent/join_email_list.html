@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+  <title>Chapter 6 - Email List application</title>
+</head>
+
+
+<script language="JavaScript">
+  <!-- hide this script from older browsers
+    function validate(form) {
+        if (form.firstName.value=="") {
+            alert("Please fill in your first name");
+            form.firstName.focus();
+        }
+        else if (form.lastName.value=="") {
+            alert("Please fill in your last name");
+            form.lastName.focus();
+        }
+        else if (form.emailAddress.value=="") {
+            alert("Please fill in your email address");
+            form.emailAddress.focus();
+        }
+        else {
+            form.submit();
+        }
+    }
+  // end hiding -->
+</script>
+
+
+<body>
+
+<h1>Join our email list</h1>
+<p>To join our email list, enter your name and
+email address below. <br>
+Then, click on the Submit button.</p>
+
+
+ <form action="/email6/EmailServlet" method="post">
+
+<table cellspacing="5" border="0">
+   <tr>
+      <td align="right">First name:</td>
+      <td><input type="text" name="firstName"></td>
+    </tr>
+    <tr>
+      <td align="right">Last name:</td>
+      <td><input type="text" name="lastName"></td>
+    </tr>
+    <tr>
+      <td align="right">Email address:</td>
+      <td><input type="text" name="emailAddress"></td>
+    </tr>
+    <tr>
+      <td align="right">Salary:</td>
+      <td><input type="text" name="salary"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <!-- a standard Submit button -->
+      <td><input type="submit" value="Submit"></td>
+
+      <!-- a JavaScript button that calls the validate function  -->
+  <td><input type="button" value="Submit"
+                 onClick="validate(this.form)"></td>
+      
+    </tr>
+</table>
+</form>
+
+</body>
+</html>
