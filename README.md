@@ -1,5 +1,6 @@
 
 # temp
+this web app takes an email address and adds it to a email form.
 ## index.html
 ```html
 <!DOCTYPE html>
